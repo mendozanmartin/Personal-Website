@@ -1,0 +1,104 @@
+.image-cropper {
+  height: auto;
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 4px 15px 15px 4px;
+  border-color: #6d9eeb;
+}
+
+.typing {
+  font-weight: 500;
+  color: #6d9eeb;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+.col-12.col-md-6.col-lg-4 {
+  cursor: pointer;
+}
+figure:hover {
+  cursor: pointer;
+}
+
+.project-gallery {
+  margin-top: -10vh;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.icon {
+  max-height: 90px;
+  max-width: 90px;
+  padding: 0px;
+  float: right;
+}
+
+/* #projects {
+  padding-top: 1vh;
+} */
+.parallax-mountains {
+  /* The image used */
+
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("../../assets/images/mountains.webp");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 100%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.parallax-desk {
+  /* The image used */
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../assets/images/coffee.webp");
+
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 640px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .image-cropper {
+    width: 80%;
+  }
+  .project-gallery {
+    margin-bottom: 0px;
+  }
+
+  .socials li .icon-mail {
+    display: none;
+  }
+
+  .container .aos-init {
+    width: 100%;
+  }
+  .icon {
+    max-height: 18vw;
+    max-width: 18vw;
+    padding: 0px;
+  }
+  .parallax-mountains {
+    overflow: hidden;
+  }
+  h5 {
+    padding-bottom: 10px;
+  }
+}
